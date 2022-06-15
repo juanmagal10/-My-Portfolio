@@ -5,6 +5,7 @@ import {AiOutlineMenu,AiOutlineClose, AiOutlineMail} from 'react-icons/ai'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
+import logo from '../public/assets/jmg-logo.jpg'
 
 const NavBar = () => {
     const [nav, setNav] = useState(false);
@@ -52,7 +53,7 @@ const NavBar = () => {
                 ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20  z-[100]'}>
           <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
               <Link href='/'><a>
-              <Image src='/../public/assets/JMG-logo.jpg' alt='logo' width='79' height='79' /></a></Link>
+              <Image src={logo} alt='logo' width='79' height='79' /></a></Link>
                 <div>
                   <ul style={{color:`${linkColor}`}} className='hidden md:flex'>
                       <Link href='/'>
@@ -87,7 +88,7 @@ const NavBar = () => {
                   <div>
                         <div className='flex w-full items-center justify-between'>
                             <Link href='/'>
-                                <a><Image src='/../public/assets/JMG-logo.png' width='70' height='70' alt='/'></Image></a>
+                                <a><Image src={logo} width='70' height='70' alt='/'></Image></a>
                             </Link>
                           
                         <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer'>
