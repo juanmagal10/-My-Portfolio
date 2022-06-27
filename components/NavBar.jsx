@@ -88,7 +88,7 @@ const NavBar = () => {
                   <div>
                         <div className='flex w-full items-center justify-between'>
                             <Link href='/'>
-                                <a><Image src={logo} width='70' height='70' alt='/' /></a>
+                                <a><Image src={logo} width='70' height='70' alt='/'></Image></a>
                             </Link>
                           
                         <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer'>
