@@ -6,6 +6,7 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { FaWhatsapp } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import contactImg from '../public/assets/contact-img.jpg'
 
 const Contact = () => {
     const sendEmail = (e) => {
@@ -29,7 +30,7 @@ const Contact = () => {
                  
                   <div className='lg:p-4 h-full'>
                       <div>
-                          <Image className='rounded-xl hover:scale-105 ease-in duration-300' src="/../public/assets/contact-img.jpg" width='600' height='400' alt="" />
+                              <Image className='rounded-xl hover:scale-105 ease-in duration-300' src={contactImg } width='600' height='400' alt="" />
                           </div>
                           <div>
                               <h2 className='py-2'>Name here</h2>
