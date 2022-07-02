@@ -9,7 +9,7 @@ const About = () => {
             <p className='uppercase text-xl1 tracking-widest text-[#5651e5]'>About</p>   
           <h2 className='py-4'>Who I am</h2>
           <p className='py-2 text-gray-600'>I am not your normal developer</p>
-          <p className='py-2 text-gray-600'>I have spent the last eigth years studying and working as a musician, playing a componing argentinian folk music, and instrumental pieces for guitar. But I also love the technology and love the computers and software, I have to use it a lot in  my music career. I started my studies in programing in 2020, learning python, but later I notice that I prefered to learn web development. I could learn, HTML, CSS, Javascript, React.JS, and now I am learning Next.js and Tailwind. </p>
+          <p className='py-2 text-gray-600'>I have spent the last eigth years studying and working as a musician, playing a componing argentinian folk music, and instrumental pieces for guitar. But I also love the technology and love the computers and software, I have to use it a lot in  my music career. I started my studies in programing in 2020, learning python, but later I notice that I prefered to learn web development. I could learn, HTML, CSS, Javascript, React.JS, and now I am learning Next.js and introducing myself in the backend content. </p>
           <p className='py-2 text-gray-600'>
             Fascinated with how intricated programing can be I was quickly drawn to learn more.
           </p>

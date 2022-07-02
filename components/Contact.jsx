@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import emailjs from '@emailjs/browser';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { FaWhatsapp } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 
@@ -40,14 +40,14 @@ const Contact = () => {
                           <p className='uppercase pt-8'>Connec With Me</p>
                               <div className='flex items-center justify-between py-4'>
                           <Link  href="https://www.linkedin.com/in/juan-manuel-galvan-salcedo-617a4b202/">
-                                <a>
+                                <a target='_blank'>
                                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                                         <FaLinkedinIn />
                                     </div>
                                 </a>
                           </Link>
                       <Link  href="https://github.com/juanmagal10">
-                        <a>
+                        <a target='_blank'>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                                 <FaGithub />
                             </div>
@@ -56,9 +56,13 @@ const Contact = () => {
                       <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                           <AiOutlineMail />
                       </div>
-                      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                          <BsFillPersonLinesFill />
-                      </div>
+                      <Link href='https://wa.me/3584909573 '>
+                          <a target='_blank'>
+                              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                  <FaWhatsapp/>
+                              </div>
+                          </a>
+                      </Link>
                           </div>
                       </div>
                       </div>
