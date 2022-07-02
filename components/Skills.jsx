@@ -1,5 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
+import HTMLImage from '../public/assets/skills/html.png'
+import CSSImage from '../public/assets/skills/css.png'
+import javascriptImage from '../public/assets/skills/javascript.png'
+import reactImage from '../public/assets/skills/react.png'
+import nextImage from '../public/assets/skills/next.png'
+import gitHubImage from '../public/assets/skills/github1.png'
 
 const Skills = () => {
   return (
@@ -13,7 +19,7 @@ const Skills = () => {
               <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                   <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                       <div className='m-auto'>
-                          <Image src='/../public/assets/skills/html.png' width='64' height='64' alt='/'/>
+                          <Image src={HTMLImage} width='64' height='64' alt='html'/>
                       </div>
                       <div className='flex flex-col items-center justify-center'>
                           <h3>HTML</h3>
@@ -24,7 +30,7 @@ const Skills = () => {
               <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                   <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                       <div className='m-auto'>
-                          <Image src='/../public/assets/skills/css.png' width='64' height='64' alt='/'/>
+                          <Image src={CSSImage} width='64' height='64' alt='css'/>
                       </div>
                       <div className='flex flex-col items-center justify-center'>
                           <h3>CSS</h3>
@@ -35,7 +41,7 @@ const Skills = () => {
               <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                   <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                       <div className='m-auto'>
-                          <Image src='/../public/assets/skills/javascript.png' width='64' height='64' alt='/'/>
+                          <Image src={javascriptImage} width='64' height='64' alt='javascript'/>
                       </div>
                       <div className='flex flex-col items-center justify-center'>
                           <h3>Javascript</h3>
@@ -46,7 +52,7 @@ const Skills = () => {
               <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                   <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                       <div className='m-auto'>
-                          <Image src='/../public/assets/skills/react.png' width='64' height='64' alt='/'/>
+                          <Image src={reactImage} width='64' height='64' alt='react'/>
                       </div>
                       <div className='flex flex-col items-center justify-center'>
                           <h3>React.js</h3>
@@ -54,13 +60,10 @@ const Skills = () => {
                 </div>
               </div>
 
-
-
-
               <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                   <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                       <div className='m-auto'>
-                          <Image src='/../public/assets/skills/next.png' width='88' height='64' alt='/'/>
+                          <Image src={nextImage} width='88' height='64' alt='next'/>
                       </div>
                       <div className='flex flex-col items-center justify-center'>
                           <h3>Next.js</h3>
@@ -70,7 +73,7 @@ const Skills = () => {
               <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                   <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                       <div className='m-auto'>
-                          <Image src='/../public/assets/skills/github1.png' width='64' height='64' alt='/'/>
+                          <Image src={gitHubImage} width='64' height='64' alt='github'/>
                       </div>
                       <div className='flex flex-col items-center justify-center'>
                           <h3>Github</h3>
