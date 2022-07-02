@@ -1,12 +1,21 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import emailjs from '@emailjs/browser';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 
 const Contact = () => {
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_9s4wm29', 'template_konz6jt', e.target, 'k8glDKgtNvkRcNvAP')
+        alert('Email Sended Correctly!')
+        window.location='/#contact'
+    }
+
   return (
     <div id='contact' className='w-full lg:h-screen'>
           <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
@@ -29,13 +38,21 @@ const Contact = () => {
                           </div>
                       <div>
                           <p className='uppercase pt-8'>Connec With Me</p>
-                          <div className='flex items-center justify-between py-4'>
-                                       <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                          <FaLinkedinIn />
-                      </div>
-                      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                          <FaGithub />
-                      </div>
+                              <div className='flex items-center justify-between py-4'>
+                          <Link  href="https://www.linkedin.com/in/juan-manuel-galvan-salcedo-617a4b202/">
+                                <a>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                        <FaLinkedinIn />
+                                    </div>
+                                </a>
+                          </Link>
+                      <Link  href="https://github.com/juanmagal10">
+                        <a>
+                            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                <FaGithub />
+                            </div>
+                        </a>
+                      </Link>
                       <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                           <AiOutlineMail />
                       </div>
@@ -49,28 +66,28 @@ const Contact = () => {
                   {/* rigth */}
                   <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
                       <div className='p-4'>
-                          <form>
+                          <form onSubmit={sendEmail}>
                               <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                                   <div className='flex flex-col'>
-                                      <label className='uppercase text-sm py-2'>Name</label>
-                                      <input className='border-2 rounded-lg flex border-grey-300' type="text"  />
+                                      <label className='uppercase text-sm py-2' htmlFor='name'>Name</label>
+                                      <input name='name' id='name' className='border-2 rounded-lg flex border-grey-300' type="text"  />
                                   </div>
                                   <div className='flex flex-col'>
-                                      <label className='uppercase text-sm py-2'>Phone Number</label>
-                                      <input className='border-2 rounded-lg flex border-grey-300' type="text"  />
+                                      <label className='uppercase text-sm py-2' htmlFor='phone-number'>Phone Number</label>
+                                      <input id='phone-number' name='phone-number' className='border-2 rounded-lg flex border-grey-300' type="text"  />
                                   </div>
                               </div>
                               <div className='flex flex-col py-2'>
-                                  <label className='uppercase text-sm py-2'>Email</label>
-                                  <input className='border-2 rounded-lg flex border-grey-300' type="email"  />
+                                  <label htmlFor='email' className='uppercase text-sm py-2'>Email</label>
+                                  <input id='email' name='email' className='border-2 rounded-lg flex border-grey-300' type="email"  />
                               </div>
                               <div className='flex flex-col py-2'>
-                                  <label className='uppercase text-sm py-2'>Subject</label>
-                                  <input className='border-2 rounded-lg flex border-grey-300' type="text"  />
+                                  <label htmlFor='subject' className='uppercase text-sm py-2'>Subject</label>
+                                  <input id='subject' name='subject' className='border-2 rounded-lg flex border-grey-300' type="text"  />
                               </div>
                               <div className='flex flex-col py-2'>
-                                  <label className='uppercase text-sm py-2'>Message</label>
-                                 <textarea className='border-2 rounded-lg p-3 border-gray-300' rows='10'></textarea>
+                                  <label htmlFor='message' className='uppercase text-sm py-2'>Message</label>
+                                 <textarea id='message' name='message' className='border-2 rounded-lg p-3 border-gray-300' rows='10'></textarea>
                               </div>
                               <button className='w-full p-4 text-gray-100 mt-4'>Send Message</button>
                           </form>
