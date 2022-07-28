@@ -1,18 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Menu from '../public/assets/projects/menu.jpg';
+import cartImg from '../public/assets/projects/react-cart.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 
-const menu = () => {
+const Cart = () => {
   return (
     <div className='w-full'>
           <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
               <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10' />
-              <Image className='absolute z-1' layout='fill' objectFit='cover' src={Menu} /> 
+              <Image className='absolute z-1' layout='fill' objectFit='cover' src={cartImg} /> 
               <div className='absolute top-[70%] max-w-[1240] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-3 '>
-                  <h2 className='py-2'>React Menu</h2>
-                  <h3>Js / CSS / HTML</h3>
+                  <h2 className='py-2'>useReducer-useContext Cart</h2>
+                  <h3>Js / CSS / HTML </h3>
               </div>       
           </div>
           
@@ -20,11 +20,11 @@ const menu = () => {
               <div className='col-span-4'>
                   <p>Project</p>
                   <h2>Overview</h2>
-                  <p>A bar menu made with react.<br></br> I made this app with react, to practice how can I handle the objeccts's arrays.
+                  <p>Shop cart made with useReducer.<br></br> I did that app as an exercice for my hooks practice. In this case I made it with useReducer and useContext hooks.
                   </p>
                     <button className='px-8 py-2 mt-4 mr-8'><Link href="https://jmgmenu.netlify.app/" passHref>
                     <a target='_blank'>Link</a></Link></button>
-                    <button className='px-8 py-2 mt-4'><Link href="https://github.com/juanmagal10/React-Menu" passHref>
+                    <button className='px-8 py-2 mt-4'><Link href="https://github.com/juanmagal10/cart-with-useReducer-useContext" passHref>
                     <a target='_blank'>Code</a></Link></button>
               </div>
               <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
@@ -44,4 +44,4 @@ const menu = () => {
   )
 }
 
-export default menu
+export default Cart

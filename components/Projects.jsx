@@ -5,6 +5,7 @@ import coolStyle from '../public/assets/projects/coolStyle.jpg'
 import clickCounter from '../public/assets/projects/clickCounter.jpg'
 import calculator from '../public/assets/projects/calculator.jpg'
 import menu from '../public/assets/projects/menu.jpg'
+import cart from '../public/assets/projects/react-cart.jpg'
 
 
 const Projects = () => {
@@ -24,6 +25,8 @@ const Projects = () => {
           <ProjectItem title='React Click Counter' backgroundImg={clickCounter} projectUrl='/ClicksCounter' skills='React, Css, Html'
           />
           <ProjectItem title='React Menu' backgroundImg={menu} projectUrl='/Menu' skills='React, Css, Html'
+          />
+          <ProjectItem title='useReducer-useContext Cart' backgroundImg={cart} projectUrl='/Cart' skills='React.js, Css, Html'
           />
 
             </div>
