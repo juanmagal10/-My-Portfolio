@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import ClicksCounterImg from '../public/assets/projects/clickCounter.jpg';
+import cocktails from '../public/assets/projects/cocktailsApi.JPG';
 import { RiRadioButtonFill } from 'react-icons/ri';
 
 const ClicksCounter = () => {
@@ -9,9 +9,9 @@ const ClicksCounter = () => {
     <div className='w-full'>
           <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
               <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10' />
-              <Image className='absolute z-1' layout='fill' objectFit='cover' src={ClicksCounterImg} /> 
+              <Image className='absolute z-1' layout='fill' objectFit='cover' src={cocktails} /> 
               <div className='absolute top-[70%] max-w-[1240] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-3 '>
-                  <h2 className='py-2'>Clicks Counter</h2>
+                  <h2 className='py-2'>Cocktails</h2>
                   <h3>Js / CSS / HTML / React.js</h3>
               </div>       
           </div>
@@ -20,12 +20,12 @@ const ClicksCounter = () => {
               <div className='col-span-4'>
                   <p>Project</p>
                   <h2>Overview</h2>
-                  <p>Clicks counter made with react.js <br />
-                      This app is a clicks counter that I realise when I started to understand the react hooks. It has a number that increases or decreases by one depend on wich button you click. And also have another button to restart de acount. The amazon logo is only for the decoration because I want to practice how to put a logo inside the app.
+                  <p>Cocktails page made with react <br />
+                    This is an app that consumes the cocktails api. I create it to practice a combine a few things in react, for example, the react-router-dom tools and the useContext hook. And you can also search for an specific cocktail and look for its characteristics. 
                   </p>
-                   <button className='px-8 py-2 mt-4 mr-8'><Link href="https://react-clicks-counter.netlify.app/" passHref>
+                   <button className='px-8 py-2 mt-4 mr-8'><Link href="https://cocktailsapi-project.netlify.app/" passHref>
                     <a target='_blank'>Link</a></Link></button>
-                  <button className='px-8 py-2 mt-4'><Link href="https://github.com/juanmagal10/Cicks-counter" passHref>
+                  <button className='px-8 py-2 mt-4'><Link href="https://github.com/juanmagal10/React-CocktailsApi" passHref>
                     <a target='_blank'>Code</a></Link></button>
               </div>
               <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>

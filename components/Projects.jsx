@@ -2,10 +2,10 @@ import React from 'react';
 import ProjectItem from './ProjectItem';
 import axiosMovies from '../public/assets/projects/axiosMovies.jpg';
 import coolStyle from '../public/assets/projects/coolStyle.jpg'
-import clickCounter from '../public/assets/projects/clickCounter.jpg'
 import calculator from '../public/assets/projects/calculator.jpg'
 import menu from '../public/assets/projects/menu.jpg'
 import cart from '../public/assets/projects/react-cart.jpg'
+import cocktails from '../public/assets/projects/cocktailsApi.JPG'
 
 
 const Projects = () => {
@@ -22,7 +22,7 @@ const Projects = () => {
           />
           <ProjectItem title='React Calculator' backgroundImg={calculator} projectUrl='/calculator' skills='React.js, Css, Html'
           />
-          <ProjectItem title='React Click Counter' backgroundImg={clickCounter} projectUrl='/ClicksCounter' skills='React, Css, Html'
+          <ProjectItem title='Cocktails App' backgroundImg={cocktails} projectUrl='/CocktailsApp' skills='React.js, Css, Html'
           />
           <ProjectItem title='React Menu' backgroundImg={menu} projectUrl='/Menu' skills='React, Css, Html'
           />
