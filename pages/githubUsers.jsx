@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import githubUsersImg from '../public/assets/projects/github-users.jpg';
+import githubUsersImg from '../public/assets/projects/github-users.JPG';
 import { RiRadioButtonFill } from 'react-icons/ri';
 
 

@@ -7,7 +7,7 @@ import menu from '../public/assets/projects/menu.jpg'
 import cart from '../public/assets/projects/react-cart.jpg'
 import cocktails from '../public/assets/projects/cocktailsApi.JPG'
 import cronoRental from '../public/assets/projects/cronoRental.jpg'
-import githubUsers from '../public/assets/projects/github-users.jpg'
+import githubUsers from '../public/assets/projects/github-users.JPG'
 
 
 const Projects = () => {
