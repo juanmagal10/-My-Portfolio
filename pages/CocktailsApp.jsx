@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import cocktails from '../public/assets/projects/cocktailsApi.jpg';
+import cocktails from '../public/assets/projects/cocktailsApi.JPG';
 import { RiRadioButtonFill } from 'react-icons/ri';
 
 const ClicksCounter = () => {
