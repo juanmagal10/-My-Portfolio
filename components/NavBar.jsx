@@ -23,7 +23,8 @@ const NavBar = () => {
             router.asPath === '/calculator' ||
             router.asPath === '/Menu' ||
             router.asPath === '/Cart' ||
-            router.asPath === '/CronoRental'
+            router.asPath === '/CronoRental'||
+            router.asPath === '/githubUsers'
         ){
             setNavBg('transparent')
             setLinkColor('#ecf0f3')

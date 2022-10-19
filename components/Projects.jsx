@@ -16,13 +16,14 @@ const Projects = () => {
           <div className='max-w-[1240px] mx-auto px-2 py-16'>
               <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Projects</p>
               <h2 className='py-4'>What I've Built</h2>
-              <div className='grid md:grid-cols-2 gap-8'>
-
+        <div className='grid md:grid-cols-2 gap-8'>
+            <ProjectItem title='Crono-Rental page' backgroundImg={cronoRental} projectUrl='/CronoRental' skills='React.js, Css, Html'
+          />
+            <ProjectItem title='Github Users Searcher' backgroundImg={githubUsers} projectUrl='/githubUsers' skills='React.js, Css, Html'
+          />
           <ProjectItem title='Axios Movies' backgroundImg={axiosMovies} projectUrl='/axiosMovies' skills='Js, axiox, Css, Html'
           />
           <ProjectItem title='Cool Style Home' backgroundImg={coolStyle} projectUrl='/CoolStyle' skills='Js, Css, Html'
-          />
-          <ProjectItem title='React Calculator' backgroundImg={calculator} projectUrl='/calculator' skills='React.js, Css, Html'
           />
           <ProjectItem title='Cocktails App' backgroundImg={cocktails} projectUrl='/CocktailsApp' skills='React.js, Css, Html'
           />
@@ -30,10 +31,9 @@ const Projects = () => {
           />
           <ProjectItem title='useReducer-useContext Cart' backgroundImg={cart} projectUrl='/Cart' skills='React.js, Css, Html'
           />
-          <ProjectItem title='Crono-Rental page' backgroundImg={cronoRental} projectUrl='/CronoRental' skills='React.js, Css, Html'
+          <ProjectItem title='React Calculator' backgroundImg={calculator} projectUrl='/calculator' skills='React.js, Css, Html'
           />
-          <ProjectItem title='Github users searcher' backgroundImg={githubUsers} projectUrl='/githubUsers' skills='React.js, Css, Html'
-          />
+        
 
             </div>
       </div>
