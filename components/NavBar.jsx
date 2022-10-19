@@ -24,7 +24,9 @@ const NavBar = () => {
             router.asPath === '/Menu' ||
             router.asPath === '/Cart' ||
             router.asPath === '/CronoRental'||
-            router.asPath === '/githubUsers'
+            router.asPath === '/githubUsers' ||
+            router.asPath === '/CocktailsApp' 
+            
         ){
             setNavBg('transparent')
             setLinkColor('#ecf0f3')
