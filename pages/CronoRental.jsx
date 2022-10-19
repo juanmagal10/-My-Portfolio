@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import CronoRentalImg from '../public/assets/projects/CronoRental.jpg';
+import CronoRentalImg from '../public/assets/projects/cronoRental.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 
 
