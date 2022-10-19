@@ -22,7 +22,8 @@ const NavBar = () => {
             router.asPath === '/CoolStyle' ||
             router.asPath === '/calculator' ||
             router.asPath === '/Menu' ||
-            router.asPath === '/Cart'
+            router.asPath === '/Cart' ||
+            router.asPath === '/CronoRental'
         ){
             setNavBg('transparent')
             setLinkColor('#ecf0f3')

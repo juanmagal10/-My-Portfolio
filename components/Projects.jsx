@@ -6,6 +6,8 @@ import calculator from '../public/assets/projects/calculator.jpg'
 import menu from '../public/assets/projects/menu.jpg'
 import cart from '../public/assets/projects/react-cart.jpg'
 import cocktails from '../public/assets/projects/cocktailsApi.JPG'
+import cronoRental from '../public/assets/projects/cronoRental.JPG'
+import githubUsers from '../public/assets/projects/github-users.JPG'
 
 
 const Projects = () => {
@@ -27,6 +29,10 @@ const Projects = () => {
           <ProjectItem title='React Menu' backgroundImg={menu} projectUrl='/Menu' skills='React, Css, Html'
           />
           <ProjectItem title='useReducer-useContext Cart' backgroundImg={cart} projectUrl='/Cart' skills='React.js, Css, Html'
+          />
+          <ProjectItem title='Crono-Rental page' backgroundImg={cronoRental} projectUrl='/CronoRental' skills='React.js, Css, Html'
+          />
+          <ProjectItem title='Github users searcher' backgroundImg={githubUsers} projectUrl='/githubUsers' skills='React.js, Css, Html'
           />
 
             </div>
