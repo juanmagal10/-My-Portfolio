@@ -1,19 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import CoolStyleImg from '../public/assets/projects/coolStyle.jpg';
+import reactEcomerce from '../public/assets/projects/react-e-comerce.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 
 
-const CoolStyle = () => {
+const EComerce = () => {
   return (
     <div className='w-full'>
           <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
               <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10' />
-              <Image className='absolute z-1' layout='fill' objectFit='cover' src={CoolStyleImg} alt='portada' /> 
+              <Image className='absolute z-1' layout='fill' objectFit='cover' src={reactEcomerce} alt='portada' /> 
               <div className='absolute top-[70%] max-w-[1240] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-3 '>
-                  <h2 className='py-2'>Clothes Store Home</h2>
-                  <h3>Js / CSS / HTML / Axios</h3>
+                  <h2 className='py-2'>E-Comerse</h2>
+                  <h3>Js / CSS / HTML / React.js / Auth0 / Stripe / Node</h3>
               </div>       
           </div>
           
@@ -21,10 +21,12 @@ const CoolStyle = () => {
               <div className='col-span-4'>
                   <p>Project</p>
                   <h2>Overview</h2>
-                  <p>Clothes Store Home.<br></br> It is a clothes store home, made with HTML, CSS and Javascript. It has a deplegable menu and and a slider with images that changes automacally and also changes when you press the buttons with the arrows.
+                  <p>E-comerce<br></br> It's an e-commerce made principally with react.js. Is a part of the John Smilga React course. You can log in with the Auth0 app and use Stripe to manage the payments.
+                    You can also manage a lot of filtering types in the products section, letting you have a comfortable experience in the buying process.
                   </p>
-                           <button className='px-8 py-2 mt-4 mr-8'>It's not deployed yet</button>
-                  <button className='px-8 py-2 mt-4'><Link href="https://github.com/juanmagal10/Cool-Style-project" passHref>
+                     <button className='px-8 py-2 mt-4 mr-8'><Link href="https://react-comfy-e-comerce.netlify.app/" passHref>
+                    <a target='_blank'>Link</a></Link></button>
+                  <button className='px-8 py-2 mt-4'><Link href="https://github.com/juanmagal10/john-smilg-e-comerce" passHref>
                     <a target='_blank'>Code</a></Link></button>
               </div>
               <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
@@ -34,6 +36,10 @@ const CoolStyle = () => {
                           <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='p-1' />Javascript</p>
                           <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill  className='p-1'/>HTML</p>
                           <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill  className='p-1'/>CSS</p>
+                          <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill  className='p-1'/>React.js</p>
+                          <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill  className='p-1'/>Node.js</p>
+                          <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill  className='p-1'/>Auth0</p>
+                          <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill  className='p-1'/>Stripe</p>
                       </div>
                   </div>
               </div>
@@ -43,4 +49,4 @@ const CoolStyle = () => {
   )
 }
 
-export default CoolStyle
+export default EComerce

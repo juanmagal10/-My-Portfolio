@@ -8,6 +8,7 @@ import cart from '../public/assets/projects/react-cart.jpg'
 import cocktails from '../public/assets/projects/cocktailsApi.JPG'
 import cronoRental from '../public/assets/projects/cronoRental.jpg'
 import githubUsers from '../public/assets/projects/github-users.JPG'
+import reactEcomerce from '../public/assets/projects/react-e-comerce.jpg'
 
 
 const Projects = () => {
@@ -23,7 +24,7 @@ const Projects = () => {
           />
           <ProjectItem title='Axios Movies' backgroundImg={axiosMovies} projectUrl='/axiosMovies' skills='Js, axiox, Css, Html'
           />
-          <ProjectItem title='Cool Style Home' backgroundImg={coolStyle} projectUrl='/CoolStyle' skills='Js, Css, Html'
+          <ProjectItem title='e-comerce' backgroundImg={reactEcomerce} projectUrl='/ECommerce' skills='Js, Css, Html, React.js, Auth0, Stripe, Node.js'
           />
           <ProjectItem title='Cocktails App' backgroundImg={cocktails} projectUrl='/CocktailsApp' skills='React.js, Css, Html'
           />

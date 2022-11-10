@@ -19,7 +19,7 @@ const NavBar = () => {
             router.asPath==='/axiosMovies'||
             router.asPath==='/TaskApp'||
             router.asPath==='/ClicksCounter'||
-            router.asPath === '/CoolStyle' ||
+            router.asPath === '/ECommerce' ||
             router.asPath === '/calculator' ||
             router.asPath === '/Menu' ||
             router.asPath === '/Cart' ||
